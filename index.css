@@ -1,0 +1,136 @@
+:root {
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --dark-blue-1: hsl(217, 54%, 11%);
+  --dark-blue-2: hsl(216, 50%, 16%);
+  --dark-blue-3: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --font-family: Outfit, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+html, body {
+  font-size: 62.5%
+}
+
+body {
+  background-color: var(--dark-blue-1);
+  display: flex;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+main {
+  background-color: var(--dark-blue-2);
+  border-radius: 14px;
+  margin: auto;
+  max-width: 320px;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#description {
+  padding: 20px 0;
+}
+
+#description > a {
+  display: inline-block;
+  color: var(--white);
+  font-size: 3em;
+  padding: 12px 0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#description > a:hover {
+  color: var(--cyan);
+}
+
+#description > p  {
+  font-size: 2.4em;
+  color: var(--soft-blue);
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer > span {
+  color: var(--soft-blue);
+  font-size: 2.4em;
+  margin-left: 20px;
+}
+
+footer > span {
+  color: var(--soft-blue);
+  font-size: 2.4em;
+}
+
+footer > span > a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+footer > span > a:hover {
+  color: var(--cyan);
+}
+
+footer  > img {
+  width: 35px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+footer:before {
+  content:  '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -15px;
+  border-bottom: 1px solid rgba(255,255,255,.20);
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 34px;
+}
+
+#info > span {
+  margin-left: 10px;
+  font-size: 2.4em;
+}
+
+#info > span:nth-child(2) {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--cyan);
+}
+
+#info > span:nth-child(4) {
+  color: var(--soft-blue);
+}
+
+#info > svg:nth-child(3) {
+  margin-left: auto;
+}
+
+#attribution {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
